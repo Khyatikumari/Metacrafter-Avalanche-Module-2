@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleContract {
+    string public message;
+    uint public counter;
+
+    constructor(string memory initialMessage) {
+        message = initialMessage;
+        counter = 0;
+    }
+
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
+
+    function incrementCounter() public {
+        counter += 1;
+    }
+
+    function getCounter() public view returns (uint) {
+        return counter;
+    }
+}

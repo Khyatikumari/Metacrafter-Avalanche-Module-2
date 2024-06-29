@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SimpleContract Interface</title>
+</head>
+<body>
+    <h1>SimpleContract Interface</h1>
+    <div>
+        <h2>Set Message</h2>
+        <input type="text" id="newMessage" placeholder="New Message">
+        <button onclick="setMessage()">Set Message</button>
+    </div>
+    <div>
+        <h2>Get Message</h2>
+        <button onclick="getMessage()">Get Message</button>
+        <p id="currentMessage"></p>
+    </div>
+    <div>
+        <h2>Increment Counter</h2>
+        <button onclick="incrementCounter()">Increment</button>
+    </div>
+    <div>
+        <h2>Get Counter</h2>
+        <button onclick="getCounter()">Get Counter</button>
+        <p id="currentCounter"></p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
